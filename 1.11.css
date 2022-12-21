@@ -1,0 +1,27 @@
+.Form{
+border-color: black;
+padding-left: 20px;
+color:solid black;
+font-size: larger;
+font-family: cursive;
+}
+tr{
+
+    padding: 20px;
+}
+body{
+
+    background:lightseagreen
+}
+.zone{
+    margin: 40px;
+    font-size: larger;
+    color:solid black;
+    font-family: cursive;
+}
+header{
+    text-align: center;
+    font-size: xx-large;
+color: solid black ;
+padding-top: 10px;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>jquery pgrm</title>
+        <script src=jquery-3.6.0.min.js></script>
+        <script>
+            $(document).ready(function(){
+                $("div").click(function(){
+                   // $("h1").text("changed always")
+                   $("h1").hide();
+                });
+                $("button").click(function(){
+                    $("body").css("background","red")
+                });
+               
+            })
+        </script>
+    </head>
+    <html>
+        <div>
+            <h1>hello world</h1>
+            <button>click here</button>
+        </div>
+    </html>
+</html>

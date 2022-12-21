@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            div {
+             color: rgb(119, 0, 255);
+              margin: 5px;
+            }
+            </style>
+    </head>
+<body>
+<p>iam the first element.</p>
+<p>iam the second element.</p>
+<p>iam the third element</p>
+<p id="demo">iam fourth element.</p><br>
+<div > div tag   </div>
+<div > div tag   </div>
+ <div > div tag   </div>
+ <div > div tag   </div>
+<div id="myDIV">this is my page</div> <br>
+<button onclick="myFunction1()">no.of p element</button><br><br>
+
+<button onclick="myFunction2()">no.of div element</button>
+<script>
+function myFunction1() {
+  var p = document.getElementsByTagName("P").length;
+  
+  document.getElementById("demo").innerHTML = p;
+  document.write("no.of p element is=",p)
+}
+function myFunction2() {
+    var c =document.getElementsByTagName("div").length;
+    document.getElementById("myDIV").innerHTML = c;
+    document.write("no.of div element=",c)
+}
+  
+</script> 
+</body>
+</html>

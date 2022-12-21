@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<stds:schema xmlns:stds="http://www.w3.org/2001/xml-schema">
+<stds:element name="email">
+<stds:complexType>
+<stds:sequence>
+<stds:element name="sender" type="stds:string"></stds:element>
+<stds:element name="receiver">
+<stds:complexType>
+<stds:sequence>
+<stds:element name="cc" 
+type="stds:string"></stds:element>
+<stds:element name="bcc" 
+type="stds:string"></stds:element>
+</stds:sequence>
+</stds:complexType>
+</stds:element>
+<stds:element name="subject" 
+type="stds:string"></stds:element>
+<stds:element name="body" type="std:string"></stds:element>
+<stds:element name="file" type="stds:string"></stds:element>
+</stds:sequence>
+</stds:complexType>
+</stds:element>
+</stds:schema>

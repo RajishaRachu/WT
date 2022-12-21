@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students>
+    <student roll_no="MCA001">
+        <fname>john</fname>
+        <lname>wright</lname>
+        <dob>
+            <date>30</date>
+            <month>june</month>
+            <year>1992</year>
+        </dob>
+    </student>
+    <student roll_no="MCA002">
+        <fname>aangela</fname>
+        <lname>wrincle</lname>
+        <dob>
+            <date>12</date>
+            <month>august</month>
+            <year>1993</year>
+        </dob>
+    </student>
+    
+</students>

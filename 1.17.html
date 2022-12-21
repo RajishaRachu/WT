@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><title>1.17</title></head>
+    <body>
+        <div>rajisha</div>
+        <div id="try"><h1><a href=""></a></h1></div>
+        <div id="try2"><h1>hello</h1></div>
+        <div id="try3"><p></p></div>
+   
+        <button onclick="show()">click here</button>
+        <script type="text/javascript">
+
+        
+        let show=()=>{
+        var x=document.body.hasChildNodes();
+           if(x==true){
+                x=document.body.nodeName;
+               document.getElementById("try2").innerHTML=x;
+                let lavel=0
+                showSecond(x,lavel)
+           }
+      }
+      let showSecond=(x,lavel)=>{
+           var n=x.childNodes;
+           document.getElementById("try").innerHTML=n;
+      }
+        
+        
+        
+        </script>
+    </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html id="h">
+    <head id="H1"><title>1.5</title>
+        <style>
+            body{
+                background: yellowgreen;
+            }
+            div{
+                display: block;
+               align-items: center;
+
+
+            }
+            #demo{
+                padding: 30px;
+                padding-top: 50%;
+                padding-left: 50%;
+            }
+            
+        </style>
+    </head>
+    <body id="H2">
+        <div></div>
+        <div id="try"><h1><a href=""></a></h1></div>
+        <div id="try2"><h1></h1></div>
+        <div id="try3"></div>
+        
+  <button onclick="show()">click here</button>
+        <script type="text/javascript">
+                //d -recursive calling
+        let  show=() =>{
+               let show1=()=>{
+                   return GetElement(document.documentElement,0);
+               }
+               let GetElement=(root,level)=>{
+                   let str="";
+                   let type=window.NODE ?NODE.ELEMENT_NODE:1;
+                   document.getElementById("try3").innerHTML=type;
+                   if(root.nodeType==type){
+                       str+=setElement(level,root.nodeName)
+                       let child=root.children;
+                       for(let i=0;i<child.length;i++){
+                           str+=GetElement(child[i],level+1);
+                       }
+                   }
+              return str;
+               }
+               let setElement=(level,node_name)=>{
+                   let str="  ";
+                   for(let i=0;i<level;i++){
+                       str+="*  "
+                   }
+                   str+=node_name+"\n";
+                   return str;
+               }
+               alert(show1())
+                
+                  
+            
+            
+                 
+            
+           
+            
+        }</script>   
+       
+        
+        
+
+    </body>
+</html>

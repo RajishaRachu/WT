@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT company (employee+)>
+<!ELEMENT employee (empname)>
+<!ELEMENT empname (#PCDATA)>
+<!ATTLIST employee emp_id ID #REQUIRED>
+<!ATTLIST dep course (mca|mba) "mca">

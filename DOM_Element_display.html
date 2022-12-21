@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html id="h">
+    <head id="H1"><title>displya html element</title>
+        <style>
+            body{
+                background: rgb(135, 202, 222);
+            }
+            div{
+                display: block;
+               align-items: center;
+            }
+            b{
+                font-size: x-large;
+            }
+            button{
+                padding: 30px;
+                margin: 10%;
+                border:  4px solid black;
+            }
+            
+        </style>
+    </head>
+    <body id="H2">
+        <div></div>
+        <div id="try"><h1><a href=""></a></h1></div>
+        <div id="try2"><h1><p></p><b></b></h1></div>
+        <div id="try3"></div>
+        <p id="display"></p>
+  <button onclick="display()"><h1>click here</h1></button>
+ <b> <div id="demo"></div></b>
+  <script type="text/javascript">
+  let txt;
+  let display=()=>{
+    
+     let type2=document.children;
+     let display2=(type2)=>{
+        for(let i=0;i<type2.length;i++){
+     
+         console.log(type2[i].nodeName);
+         document.getElementById("demo").innerHTML+=type2[i].nodeName+"       ,  ";
+       
+        
+         if(type2[i].hasChildNodes()){
+             type3=type2[i].children;
+             display2(type3);
+        
+        }
+       
+     }
+     
+ }
+     display2(type2);
+      }
+     
+     
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body></html>

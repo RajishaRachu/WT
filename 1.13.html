@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head><title>prime numbers</title>
+    <style>
+      body{
+          background:#ffff99;
+          background-size: cover;
+          background-repeat: no-repeat;
+          text-align: center;
+          padding-top: 70px;
+        
+        } 
+        button{
+
+            width:200px;
+            height:100px;
+        
+    
+
+        } 
+        #demo{
+            font-size: 30px;
+            font-family: cursive;
+            letter-spacing: 2px;
+        }
+        
+        </style>
+<script type="text/javascript">
+let primeNum=()=>{
+    let [i,j,count,n,k]=[1,1,0,0,0];
+
+    let Num=new Array()
+
+    while(n<10)
+    {   
+        j=0;
+        count=0;
+      while(j<=i)
+      {  
+        
+          if(i%j==0){
+              count++;
+             }
+             j++
+     }
+     if(count==2){
+
+         Num[k]=i
+         k++
+         n++
+         
+     }
+      i++
+    }
+     document.getElementById("demo").innerHTML= " first 10 prime numbers are:\n"+Num;
+}
+
+</script>
+</head>
+<body>
+    <button onclick="primeNum()"> click here</button><br>
+    <p id="demo"></p>
+    
+    
+    
+</body>
+
+</html>

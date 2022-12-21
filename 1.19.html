@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            event propagation 1.19
+        </title>
+        <style>
+            div.container{
+                align-items: center;
+                padding: 10% 10%  15%   20%;
+                display: flex;
+                
+            }
+            button{
+                align-items: center;
+                padding: 30px;
+                margin: 0px
+            }
+            h4{
+                padding: 0%;
+                margin: 0%  ;
+            }
+ </style>
+    </head>
+
+        <body>
+            <div class="container">
+                <div id="a1" style="background:red;margin:20px; padding:15px 10px 10px 10px;" ><h4>first</h4>
+                    <div id="a2" style="background: powderblue;padding:20px" ><h4>second</h4>
+                        <div id="a3" style="background: royalblue;padding:15px;"><h4>third</h4>
+                <button id="click1" class="click1" >clck1</button>
+                </div>
+                    </div>
+                         </div>
+
+                <div id="b1" style="background:red;margin:20px;padding:15px 10px 10px 10px;"><h4>first</h4>
+                    <div id="b2" style="background: powderblue; padding: 20px;"><h4>second</h4>
+                        <div id="b3" style="background: royalblue;padding: 15px;"><h4>third</h4>
+                            <button id="click2" class="click2" >clck2</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="c1" style="background:red;margin:20px;padding: 15px 10px 10px 10px;"><h4>first</h4>
+                    <div id="c2" style="background: powderblue;padding: 20px;"><h4>second</h4>
+                        <div id="c3" style="background: royalblue; padding:15px;">
+                         <h4 style="padding-top:0px;">third</h4><button id="click3" class="click3" >clck3</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                         
+            <script>
+            /*section A*/
+            let ShowResult=(n,m)=>{
+                alert("you clicked\nbutton "+n+m);
+                console.log(n+"-"+m);
+            }
+            document.getElementById("a1").addEventListener("click",function()
+                {
+                    ShowResult("click1  ","first");
+                },false);
+                document.getElementById("a2").addEventListener("click",function()
+                {
+                    ShowResult("click1  ","second");
+                    console.log("stop propagation");
+                    event.stopPropagation();
+                },true);
+                document.getElementById("a3").addEventListener("click",function()
+                {  
+                    ShowResult("click1  ","third");
+                   
+                },false);
+            
+                /*section B*/
+                document.getElementById("b1").addEventListener("click",function()
+                {
+                    ShowResult("click2  ","first"); 
+                },false);
+                document.getElementById("b2").addEventListener("click",function()
+                {
+                    ShowResult("click2  ","second"+" -target listener")
+                },true);
+                document.getElementById("b3").addEventListener("click",function()
+                {  
+                    ShowResult("click2  ","third"); 
+                 },false);
+             /*section 3*/
+             document.getElementById("c1").addEventListener("click",function()
+                {
+                    ShowResult("click3 ","first"); 
+                },true);
+                document.getElementById("c2").addEventListener("click",function()
+                {
+                    ShowResult("click3  ","second"); 
+                },true);
+                document.getElementById("c3").addEventListener("click",function()
+                {  
+                    ShowResult("click3  ","third"); 
+                 },true);
+                </script>
+                    </body>
+                </head>
+            </html>

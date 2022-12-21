@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>AREA</title>
+</head>
+<body>
+    <script type="text/javascript">
+
+ function myFunction(){
+
+        let n=prompt("enter your choice");
+        console.log(n);
+        switch(n){
+            case "triangle":
+             a=prompt("enter your value");
+             b=prompt("enter your value");
+             c=(a*b/2);
+             window.alert("area of triangle ="+c)
+             break;
+            case "square":
+            a=prompt("enter your value");
+            c=(a*a)
+            window.alert("area of squre="+c);
+             break;
+
+            case "rectangle":
+             a=prompt("enter your value");
+             b=prompt("enter your value");
+             c=(a*b);
+             window.alert("area of rectangle="+c)
+             break;
+               
+            case "circle":
+             a=prompt("enter your value");
+             c=((22/7)*a);
+             window.alert("area of circle="+c)
+             break;
+            default:
+                   window.alert("plz input correct choice");
+
+        }
+ }
+        </script>
+    <h1>your choice</h1>
+    <table id="a">
+      <tr><td>TRIANGLE</td></tr> 
+      <tr><td>SQUARE</td></tr>
+      <tr><td>RECTANGLR</td></tr>
+      <tr><td>CIRCLE</td></tr>
+ </table>
+<button onclick="myFunction()"><b>CLICK HERE</b></button>
+</body>
+
+
+</html>

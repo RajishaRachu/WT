@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<head>
+    <title> CANVAS</title>
+    <style>
+    #myCanvas{
+        width:700px;
+         height:600px;
+         
+        border:1px solid #000000;
+        background-color: darkgray;
+        float: right;
+        
+    
+
+        }
+    #item1{
+
+    display: inline-block;
+    margin: 200px;
+    height: 20px;
+    size: 30px;
+    margin-top: 1px;
+
+    }
+    #item3{
+        width: 100px;
+        height: 100px;
+        display: block;
+        margin-bottom: 90px; 
+        background-color:gray;
+        font-size: large;  
+
+        
+
+    
+    }
+    
+    </style>
+    </head>
+    <body>
+    
+        <div id="item1">
+            <button id="item3" onclick="line()">Line</button>
+            <button id="item3" onclick="cercle()">Cercle</button>
+            <button id="item3" onclick="rect()">Rectangle</buttonid="item3">
+            <button type="submit"id="item3" onclick=location.reload()>Refresh</button>
+        </div>
+
+        <canvas id="myCanvas">
+            Your browser does not support the HTML canvas tag.
+            </canvas>
+            
+<script>
+
+            var canvas = document.querySelector('canvas');
+
+            
+            canvas.width = window.innerWidth;
+
+           canvas.height = window.innerHeight;
+
+        var   c = canvas.getContext('2d');
+
+            
+        function  rect(){
+            c.fillStyle = 'red';
+            c.beginPath();
+            c.lineWidth="2";
+            c.strokeStyle="black";
+
+            c.fillRect(1000, 400, 200, 100);            
+
+            c.strokeRect(1000, 400, 200, 100);
+            c.stroke();
+            }
+            
+
+
+            //  c.
+        
+        function cercle(){ 
+            
+            c.beginPath();
+            
+            c.arc(700,250,100,0,2*Math.PI);
+            c.strokeStyle="blue";
+            c.lineWidth="5";
+            c.stroke();
+        }
+        function line(){
+            c.beginPath();
+            c.moveTo(0, 0);
+            c.lineTo(500, 150);
+            c.lineWidth = "5";
+            c.strokeStyle = "green";  
+            c.stroke();
+              
+
+        } 
+        </script>
+
+    
+</body>
+</html>

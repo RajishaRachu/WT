@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="eg">
+    <head><title>mouse over</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <style>
+        
+        p{
+            
+            padding-left: 200px;
+            margin-bottom: 30px;
+            padding-top: 30px;
+          
+            }
+            body{
+                background: linear-gradient(yellow,white);
+                background-repeat: no-repeat;
+                background-size: cover;
+                padding-left: 500px;
+              
+            }
+            .demo{
+
+                border: 3px solid #ff0066;
+                padding: 5px;
+                box-shadow:2px 2px 10px black;
+                
+            }
+            div{
+               margin-bottom: 40px;  
+               font-family: cursive;
+               font-size: 40px;
+               text-shadow: 4px 4px 4px #ff0066;
+               color:black;
+               font-family: 'Satisfy', cursive;
+            }
+           
+            
+       
+    
+    </style>
+    </head>
+<body>
+
+    <p>
+        <div id="Text"> Before</div>
+     <img src="aa.jpg"  id="img1" class="demo" alt="beautiful"  height="100px" width="100px" 
+     onmouseover="show('300px','After');" onmouseout="show('100px','Before');"> 
+     
+
+
+    </p>
+    <script type="text/javascript">
+        let show=(x,t)=>{
+            /*document.getElementById("img1").style.height=x;*/
+            let elt=document.getElementById("img1");
+            let elt2=document.getElementById("Text").innerHTML=t;
+            elt.setAttribute("width",x);
+            elt.setAttribute("height",x);
+}
+    
+        </script>
+    
+</body>
+    </html>

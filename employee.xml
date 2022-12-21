@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<!DOCTYPE company SYSTEM "employee.dtd">-->
+    <company>
+            <employee emp_id="000">
+                <empname>anasi </empname>
+                <dep course="ba"></dep>
+            </employee>
+        </company>

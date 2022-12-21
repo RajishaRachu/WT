@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<!DOCTYPE email SYSTEM "gmail.dtd">-->
+<email xmlns:stds="http://www.w3.org/2001/xml-schema-instance" 
+stds:noNameSpaceSchemaLocation="gmail.xsd">
+<sender>sender</sender>
+<receiver>
+<cc>sender1</cc>
+<bcc>sender2</bcc>
+</receiver>
+<subject>subject</subject>
+<body>body</body>
+<file>sending</file>
+</email>

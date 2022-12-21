@@ -1,0 +1,48 @@
+header{
+text-align: center;
+font-size: larger;
+font-family: cursive;
+font-weight: bold;
+}
+.first{
+    background-color: hotpink;
+    font-size: large ;
+
+}
+body{
+    background-color: cornsilk;
+    font-family: cursive;
+}
+.item1{
+    display:flex;
+    font-size: 20px;
+    padding-left: 20px;
+    border: indigo bold;
+ 
+
+    }
+    .second{
+        padding:20px;
+        display: flex;
+        margin:10px;
+        background-color: lightcoral;
+        font-size: 20px;
+        
+
+        
+    }
+    .item2{
+
+        display:inline-flex;
+        padding-left: 20px;
+        padding-inline: 20px;
+    }
+    .display{
+
+        text-align: left;
+    }
+    .last{
+        font-size: 20px;
+        text-align: center;
+        letter-spacing: 2px;
+    }

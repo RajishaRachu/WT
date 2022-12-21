@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="busness_xml_rule.css"?>
+<busness>
+<company>
+<name><number>1 .</number>name:TCS</name>
+<branch_id>branch_id:dfe12343</branch_id>
+<market_cap>market cap:Rs 323,4543,Cr</market_cap>
+<contry>contry: INDIA</contry>
+<email>email: TCS@gmal.com</email>
+<start_date>start date: 12/9/1990</start_date>
+<employees>employees: 420</employees>
+<revenue>Revenue: 152,497</revenue>
+<sales_growth>sales growth: 10.47</sales_growth>
+<promoter_holding>promoter holding: 72%</promoter_holding>
+</company>
+<company>
+ <name><number>2 .</number>name: wipro</name>
+<branch_id>branch_id: IN200343</branch_id>
+<market_cap>market_cap: Rs 324,9765 Cr</market_cap>
+<contry>contry: USA</contry>
+<email>email: wipro@gmal.com</email>
+<start_date>start_date: 12/05/1980</start_date>
+<employees>employee: 700</employees>
+<revenue>revenue: 87,497</revenue>
+<sales_growth>sales_growth:30%</sales_growth>
+<promoter_holding>promoter_holding: 78%</promoter_holding>
+</company>
+<company>
+<!--infosis-->
+<name><number>3 .</number>name: infosis</name>
+<branch_id>branch_id: IN2089773</branch_id>
+<market_cap>market_cap: Rs567,643 Cr</market_cap>
+<contry>contry: UAE</contry>
+<email>infosis@gmal.com</email>
+<start_date>start date:12/05/1980</start_date>
+<employees>employees: 1000</employees>
+<revenue>revenue: 433,497 Cr</revenue>
+<sales_growth>sales_growth: 50%</sales_growth>
+<promoter_holding>promoter: 90%</promoter_holding>
+</company>
+<company>
+<!--HCL technology-->
+<name><number>4 .</number>name: HCL technology</name>
+<id type="should contain 5 more charecter">id: INHC00034</id>
+<market_cap>market_cap: Rs 432,567 Cr</market_cap>
+<contry>contry: Australia</contry>
+<email>Hcl@gmal.com</email>
+<start_date>start date:12/05/1970</start_date>
+<employees>employees: 1200</employees>
+<revenue>revenue: 433,497 Cr</revenue>
+<sales_growth>sales_growth: 30%</sales_growth>
+<promoter_holding>promoter: 80%</promoter_holding>
+</company>
+<company>
+<!--Capgemini-->
+<name><number>5 .</number>name: Capgemini</name>
+<id type="should contain 5 more charecter">id: FRC00012</id>
+<market_cap>market_cap: Rs 543,897 Cr</market_cap>
+<contry>contry: France</contry>
+<email>Capgemini@gmal.com</email>
+<start_date>start date:01/01/1978</start_date>
+<employees>employees: 800</employees>
+<revenue>revenue: 876,903 Cr</revenue>
+<sales_growth>sales_growth: 70%</sales_growth>
+<promoter_holding>promoter: 40%</promoter_holding>
+</company>
+<company>
+<!--SAP-->
+<name><number>6 .</number>name: SAP</name>
+<id type="should contain 5 more charecter">id: FRC00012</id>
+<market_cap>market_cap: Rs 543,897 Cr</market_cap>
+<contry>contry: France</contry>
+<email>Capgemini@gmal.com</email>
+<start_date>start date:01/01/1978</start_date>
+<employees>employees: 800</employees>
+<revenue>revenue: 876,903 Cr</revenue>
+<sales_growth>sales_growth: 70%</sales_growth>
+<promoter_holding>promoter: 40%</promoter_holding>
+</company>
+<company>
+<!--Mphasis-->
+<name><number>7 .</number>name: Mphasis</name>
+<id type="should contain 5 more charecter">id: MPINC00012</id>
+<market_cap>market_cap: Rs 66,3244 Cr</market_cap>
+<contry>contry: India</contry>
+<email>mphasis@gmal.com</email>
+<start_date>start date:13/05/1956</start_date>
+<employees>employees: 84532</employees>
+<revenue>revenue: 786,6543 Cr</revenue>
+<sales_growth>sales_growth: 90%</sales_growth>
+<promoter_holding>promoter: 70%</promoter_holding>
+</company>
+<company>
+<!--micro soft corporation-->
+<name><number>8 .</number>name: microsoft</name>
+<branch_id type="should contain 5 more charecter">branch_id: 
+AMMC6764536</branch_id>
+<market_cap>market_cap: Rs 900,567,456 Cr</market_cap>
+<contry>contry: America</contry>
+<email>micrsoft@gmal.com</email>
+<start_date>start date:20/09/1900</start_date>
+<employees>employees: 1200000</employees>
+<revenue>revenue: 675,497 Cr</revenue>
+<sales_growth>sales_growth: 70%</sales_growth>
+<promoter_holding>promoter: 99%</promoter_holding>
+</company>
+<company>
+<!--IBM-->
+<name><number>9.</number>name: IBM</name>
+<branch_id type="should contain 5 more charecter">branch_id: 
+AMIBM</branch_id>
+<market_cap>market_cap: Rs 900,786,456 Cr</market_cap>
+<contry>contry: south America</contry>
+<email>IBM@gmal.com</email>
+<start_date>start date:20/09/1980</start_date>
+<employees>employees: 100000</employees>
+<revenue>revenue: 275,497 Cr</revenue>
+<sales_growth>sales_growth: 60%</sales_growth>
+<promoter_holding>promoter: 79%</promoter_holding>
+</company>
+<company>
+<!--oracle-->
+<name><number>10.</number>name: Oracle</name>
+<branch_id type="should contain 5 more charecter">branch_id: 
+OR45600076</branch_id>
+<market_cap>market_cap: Rs 100,875,425 Cr</market_cap>
+<contry>contry: australia</contry>
+<email>Oracle@gmal.com</email>
+<start_date>start date:06/10/1988</start_date>
+<employees>employees: 2200000</employees>
+<revenue>revenue: 786,000 Cr</revenue>
+<sales_growth>sales_growth: 55%</sales_growth>
+<promoter_holding>promoter: 71%</promoter_holding>
+</company>
+</busness>

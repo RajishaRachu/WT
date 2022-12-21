@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #mycanvas{
+                width:700px;
+                 height:600px;
+                 
+                border:1px solid #000000;
+                background-color: darkgray;
+        
+                }
+            </style>
+    </head>
+<body>
+<p> SHAPES</p>
+ <p>
+ <button onclick="drawc()">Circle</button>
+ <button onclick="drawr()">Rectangle</button>
+ <button onclick="drawsq()">Square</button>
+</p>
+ <canvas id="mycanvas" width="200" height="200"></canvas>
+ 
+ <script>
+ var c = document.getElementById("mycanvas");
+var ctx = c.getContext("2d");
+ 
+function drawc(){
+ ctx.clearRect(0,0,c.width,c.height);
+ctx.beginPath();
+ctx.fillStyle="green";
+ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+ctx.fill();
+ctx.stroke();
+}
+ 
+function drawr(){
+ ctx.clearRect(0,0,c.width,c.height);
+ctx.beginPath();
+ctx.fillStyle= "yellow";
+ctx.fillRect(20, 20, 150, 100);
+ctx.stroke();
+}
+ 
+function drawsq(){
+ ctx.clearRect(0,0,c.width,c.height);
+ ctx.beginPath();
+ ctx.fillStyle= "blue";
+ctx.fillRect(20, 20, 100, 100);
+ctx.lineWidth = "5";
+ctx.strokeStyle = "green"; 
+
+ctx.stroke();
+}
+   </script>
+</body>
+</html>

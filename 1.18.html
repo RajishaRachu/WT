@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head><title>1.17</title>
+<style>
+    body{
+       background-color:skyblue;
+        background-repeat: no-repeat;
+        box-sizing: border-box;
+        
+     
+    }
+    .column  {
+  float: left;
+  width: 28.33%;
+  padding:5px 5px 5px 40px;
+  background: palevioletred;
+  margin: 10px;
+  
+}
+
+/* Clearfix (clear floats) */
+.row {
+  content: "";
+  clear: both;
+  display: flex;
+
+  /*display: table;*/
+}
+div.column1{
+   margin-top: 35px;
+   margin: 10px;
+}
+.ReLoad{
+    margin:auto;
+    margin-left: 40rem;
+}
+img{
+    margin-top: 20px;
+    width: 100%
+}
+.para1{
+    text-transform: uppercase;
+    text-align: center;
+}
+button{
+    padding: 8px;
+    border-radius: 10%;
+    background:grey;
+    margin-top: 70px;
+    }
+    </style>
+</head>
+<body>
+        <div id="mainclass">
+                    <!--mouse down and mouse up events-->
+           <div class="row">
+               <div class="column" id="coloum">
+                   <p><h2>Mousedown up</h2>
+                    <h4>as mouse up and down image will change</h4>
+                   <p id="A"></p>
+                        <img src="aa.jpg" id="image" style="width:200px; height:200px"; />
+                        </p>
+
+                        </div>
+        <!--Mouse Over and mouse out-->
+               <div class="column column1" id="coloum1">
+                   <p><h2>Mouseover out</h2>
+                    <h4>move mouseover and out on image</h4>
+                <p id="A1"><h1></h1>
+                <img src="dd.jpg" id="image0" style="height: 200px; width:200px;"  />
+                </p>
+                </p>
+                </div>
+                <div class="column column2" id="coloum2">
+                    <p><h2>Mousemove and click</h2>
+                    <h4>as mouse move value will increment</h4></p>
+                 <h1><p id="A2"></p></h1>
+                 <button id="but" >click here to stop mousemove</button>
+               </div>
+
+                 </div>
+                <div class="para" >
+                   <h1> <p class="para1" id="para1">Double click here to change background color
+                    </p></h1></div>
+        </div>  
+        <div>
+            <button class="ReLoad" onClick="window.location.reload();"> Reload page</button onclick="window.location.reload();">
+        </div> 
+               
+ 
+
+
+      
+   
+<script>
+    /*mouse down mousup*/
+ 
+document.getElementById("image").addEventListener("mousedown",function(){
+
+document.getElementById("A").innerHTML="<h1> Mousedown<h1>";
+document.getElementById("image").src="bb.jpg";
+});
+document.getElementById("image").addEventListener("mouseup",function(){
+    document.getElementById("A").innerHTML="<h1> Mouseup<h1>";
+    document.getElementById("image").src="aa.jpg";
+});
+/*mouseover mouseout*/
+let OverOut=(Img,t)=>{
+    document.getElementById("image0").src=Img;  
+    document.getElementById("A1").innerHTML="<h1>"+t+"<h1>";
+  }
+
+document.getElementById("image0").addEventListener("mouseover",function(){
+    OverOut("aa.jpg"," mouseover")});
+  
+ document.getElementById("image0").addEventListener("mouseout",function(){
+    document.getElementById("image0").addEventListener("mouseout",function(){
+    OverOut("dd.jpg"," mouseout")});
+    
+});
+/*ondbclick*/
+function myFunction(c1,c2,event) {
+    document.body.style.background=c1;
+    document.getElementById("coloum").style.background=c2
+    document.getElementById("coloum1").style.background=c2;
+    document.getElementById("coloum2").style.background=c2;
+  document.getElementById("para1").innerHTML= event
+}
+document.getElementById("para1").addEventListener("dblclick",function(){ myFunction("#ff66b3","#b3b3cc","<h2>background changed</h2>")},false);
+/*document.getElementById("para1").addEventListener("dblclick",function(){ myFunction("#00a3cc","#ff0055","<h2>back to normal</h2>")},false)*/
+/*mousemoove*/
+let n=0;
+function Fun()
+    {
+       document.getElementById("A2").innerHTML=n+=1;
+    }
+let RemoveEvent=()=>{
+        document.getElementById("coloum2").removeEventListener("mousemove",Fun);
+}
+
+document.getElementById("coloum2").addEventListener("mousemove",Fun);
+document.getElementById("but").addEventListener("click",RemoveEvent);
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>

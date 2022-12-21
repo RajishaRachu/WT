@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <script src="jquery-3.6.0.min.js"></script>
+    <title>J Query</title>
+    <script>
+    $(document).ready(function(){
+       $("p").bind("click",function(){
+           $("p").css("background-color","red")})
+       $(".after").click(function(){
+           $(".p_1").after("<p class='P_after'>this new para elemnt added after</p>")
+       })
+       $(".before").click(function(){
+           $(".p_1").before("<p class='P_before'>this new para elemnt added beofere</p>")
+       })
+       $(".replace_all").click(function(){
+           $("<h2> p is replaced by h2</h2>").replaceAll("p:even")
+       })
+       $(".replace-with").click(function(){
+           $("p:first").replaceWith("Hello world")
+       })
+           
+       })
+    
+    </script>
+    </head>
+    <body>
+        <div class="test">
+            <p class="p_1">this is first paragraph</p>
+        </div>
+       
+                <button class="after">After</button>
+                <button class="replace_all">Replace_all</button>
+                <button class="before">Bofore</button>
+                <button class="replace-with">replace-with</button>
+                
+
+      
+    </body>
+</html>

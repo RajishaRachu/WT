@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<head><meta charset="UTF-8"></head>
+<html>
+  <head>
+    <title>QUIZ for you</title>
+    <link rel="stylesheet" href="1.12.css">
+    <script src="1.12.js"></script>
+  </head>
+  <body>
+    <header><h1>QUIZ<h1></h1></header>
+    <!--first -->
+<div class="first">
+    <p class="Q" >1. Smaller and less expensive PC based servers
+       are replacing today 
+       in many businesses</p>
+       <div class="item2">
+  <input type="radio" name="o1" id="wrong" onchange="show()">super computer 
+  <input type="radio" name="o1" id="wrong" onchange="show()">client 
+  <input type="radio" name="o1" id="wrong" onchange="show()">laptop</input>
+  <input type="radio" name="o1" id="correct" onchange="show()" value="main frame">main frame</input>
+  </div>
+  <br>
+  <div class="display">
+  <p id="Showanswer"></p>
+  <p id="S1"></p>
+  </div>
+
+  </div>
+  <br>
+  <!--second-->
+  <div class="first">
+    <p class="Q" >2.If a company wishes to test its positioning strategy,
+       advertising, distribution, pricing, branding and packaging, and budget levels, it can 
+      do so during which of the following stages of the new-product development process?
+in many businesses</p>
+<div class="item1">
+ <input type="radio" name="o2" id="wrong1" onchange="show1()">Commercialization
+ <input type="radio" name="o2" id="correct1" onchange="show1()" value="Test marketing">Test marketing  
+ <input type="radio" name="o2" id="wrong1" onchange="show1()">Product development
+ <input type="radio" name="o2" id="wrong1" onchange="show1()"> Concept testing
+</div>
+ <br>
+<div class="display">
+ <p id="Showanswer1"></p>
+ <p id="S2" ></p>
+ </div>
+ 
+</div>
+<br>
+<!--third-->
+<div class="first">
+  <p class="Q" >3.Which of the following is not a method of accessing the web?</p>
+<div class=item2>
+  <input type="radio" name="o3"  id="wrong2" onchange="show2()"> Modem  
+<input type="radio" name="o3"  id="wrong2" onchange="show2()"> DSL
+<input type="radio" name="o3" id="correct2" onchange="show2()" value="CPU">CPU
+<input type="radio" name="o3" id="wrong2" onchange="show2()">  ISDN
+</div>
+<div>
+<br>
+<div class="display">
+<p id="Showanswer2"></p>
+<p id="S3" ></p>
+</div>
+</div>
+</div>
+
+<!--to show answr and result point--> 
+<div class="item1">
+ <div>
+<button  class="second"id="result" onclick="result()"><b>click here marks<b></b></button>
+ </div>
+ 
+ <br>
+ <div>
+  <button class="second" id="showA" onclick="showA()"><b></b>show answer</b></button>
+  </div>
+<br>
+<div>
+  <button  class="second" onClick="window.location.reload();"><b>Refresh Page</b></button>
+</div>
+</div>
+<div class="last first">
+<p id="RightA"></p>
+<p id="WrongA"></p>
+</div>
+
+  </body>
+</html>
